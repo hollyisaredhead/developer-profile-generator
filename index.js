@@ -31,7 +31,7 @@ function promptUser() {
     
           const repoNamesStr = repoNames.join("\n");
     
-          fs.writeFile("developer.txt", repoNamesStr, function (err) {
+          fs.writeFile("developer.html", repoNamesStr, function (err) {
             if (err) {
               throw err;
             }
@@ -55,6 +55,7 @@ function generateHTML(answers) {
 </head>
 <body>
   <div class="jumbotron jumbotron-fluid">
+  
   <div class="container">
 
     </ul>
