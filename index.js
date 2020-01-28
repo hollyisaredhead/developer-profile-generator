@@ -45,7 +45,7 @@ function promptUser() {
     })
 }
 
-function generateHTML(answers) {
+function genHTML(answers) {
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -103,7 +103,7 @@ function generateHTML(answers) {
 
 promptUser()
   .then(function (answers) {
-    const html = generateHTML(answers);
+    const html = genHTML(answers);
 
     return writeFileAsync("developer.html", html);
   })
